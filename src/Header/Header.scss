@@ -1,0 +1,107 @@
+@import '../variables.scss';
+
+.Header {
+    width: 100vw;
+    height: 70px;
+    padding: 0 60px;
+    box-sizing: border-box;
+
+    border-bottom: 5px solid $c-pink;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    @media (max-width: $w-phone) {
+        padding: 0 14px;
+        height: 60px;
+
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 143px;
+        margin-top: -4px;
+
+        @media (max-width: $w-phone) {
+            width: 120px;
+        }
+    }
+
+    &__phone {
+        display: none;
+
+        @media (max-width: $w-phone) {
+            width: 84px;
+            display: flex;
+            align-items: center;
+            gap: 13px;
+        }
+    }
+
+    &__search {
+        display: none;
+
+        @media (max-width: $w-phone) {
+            display: block;
+            margin-right: 27px;
+        }
+    }
+
+    &__desktop {
+        display: block;
+
+        @media (max-width: $w-phone) {
+            display: none;
+        }
+    }
+}
+
+.search-input {
+    padding: 12px 10px 12px 40px;
+    width: 241px;
+
+    border: 1px solid $c-silverLight;
+
+    font-family: 'Gill Sans Nova';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.155em;
+    text-transform: uppercase;
+
+    color: $c-silver;
+
+    background: url("./search-icon.svg") no-repeat 10px;
+
+    transition: all 0.3s;
+
+    &::placeholder {
+        color: $c-silver;
+    }
+
+    &:focus {
+        border-color: $c-silverDark;
+        border-radius: 5px;
+    }
+
+
+    @media (max-width: $w-phone) {
+        display: none;
+    }
+}
+
+.nav {
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin-left: 20px;
+    }
+}

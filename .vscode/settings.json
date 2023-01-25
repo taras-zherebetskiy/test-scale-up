@@ -1,0 +1,11 @@
+{
+    "editor.tabSize": 2,
+    "editor.columnSelection": false,
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    }
+}

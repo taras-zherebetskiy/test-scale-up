@@ -1,0 +1,13 @@
+@import './variables.scss';
+
+.App {
+  &__content {
+    display: flex;
+    padding: 30px 58px;
+
+    @media (max-width: $w-phone) {
+      padding: 0;
+      flex-direction: column;
+    }
+  }
+}

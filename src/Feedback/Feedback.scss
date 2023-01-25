@@ -1,0 +1,49 @@
+@import '../variables.scss';
+
+$d-width: 140px;
+$d-height: 40px;
+
+$p-height: 30px;
+$p-width: 108px;
+
+.Feedback {
+    position: fixed;
+    rotate: 90deg;
+    top: calc(50% - ($d-width / 2));
+    right: -$d-height - 12px;
+    z-index: 100;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    border: 1px solid #B4B4B4;
+    border-radius: 3px 3px;
+    width: $d-width;
+    height: $d-height;
+
+    font-family: 'Pan Display';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.155em;
+    text-transform: uppercase;
+
+    color: $c-silverGrand;
+
+    background-color: #fff;
+    transition: all 0.3s;
+
+
+    @media (max-width: $w-phone) {
+        top: calc(60%);
+        right: -$p-height - 12px;
+
+        width: $p-width;
+        height: $p-height;
+    }
+
+    &:hover {
+        background-color: $c-silverLight;
+    }
+}
